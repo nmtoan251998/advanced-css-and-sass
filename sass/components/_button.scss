@@ -1,0 +1,39 @@
+.btn {
+    &:link,
+    &:visited {
+        @extend %btn;
+    }
+
+    position: relative;
+    z-index: 0;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: inline-block;                        
+    font-size: 1.5rem;
+    word-spacing: .5rem;       
+    transition: .35s;    
+
+    &::after {
+        @extend %btn;
+        content: "";        
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;                                
+        background-color: inherit;
+        opacity: 0;
+    }
+
+    &:hover { 
+        transform: translate(-50%, -1.5rem);
+        &::after { animation: faded 1s }
+    }
+    &:active { transform: translate(-50%, .7rem) }
+    
+    &--animated { animation: moveInBottom 1.5s ease-in}        
+    &--white {color: $color-grey-dark; background-color: $color-white}
+    &--dark {color: $color-dark; background-color: $color-white}
+}

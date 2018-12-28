@@ -1,0 +1,68 @@
+@keyframes moveInBottom {
+    0% { @include moveInAnimation(-50%, 5rem , 0) }
+    60% { @include moveInAnimation(-50%, -1rem , .5) }
+    100% { @include moveInAnimation(-50%, 0rem , 1) }
+}
+
+@-webkit-keyframes moveInBottom {
+    0% { @include moveInAnimation(-50%, 5rem , 0) }
+    60% { @include moveInAnimation(-50%, -1rem , .5) }
+    100% { @include moveInAnimation(-50%, 0rem , 1) }
+}
+
+@-moz-keyframes moveInBottom {
+    0% { @include moveInAnimation(-50%, 5rem , 0) }
+    60% { @include moveInAnimation(-50%, -1rem , .5) }
+    100% { @include moveInAnimation(-50%, 0rem , 1) }
+}
+
+@keyframes moveInLeft {
+    0% { @include moveInAnimation(-10rem, 0, 0) }
+    60% { @include moveInAnimation(1rem, 0, .5) }
+    100% { @include moveInAnimation(0rem, 0, 1) }    
+}
+
+@-webkit-keyframes moveInLeft {
+    0% { @include moveInAnimation(-10rem, 0, 0) }
+    60% { @include moveInAnimation(1rem, 0, .5) }
+    100% { @include moveInAnimation(0rem, 0, 1) }    
+}
+
+@-moz-keyframes moveInLeft {
+    0% { @include moveInAnimation(-10rem, 0, 0) }
+    60% { @include moveInAnimation(1rem, 0, .5) }
+    100% { @include moveInAnimation(0rem, 0, 1) }    
+}
+
+@keyframes moveInRight {
+    0% { @include moveInAnimation(10rem, 0, 0) }
+    60% { @include moveInAnimation(-1rem, 0, .5) }
+    100% { @include moveInAnimation(0rem, 0, 1) }    
+}
+
+@-webkit-keyframes moveInRight {
+    0% { @include moveInAnimation(10rem, 0, 0) }
+    60% { @include moveInAnimation(-1rem, 0, .5) }
+    100% { @include moveInAnimation(0rem, 0, 1) }    
+}
+
+@-moz-keyframes moveInRight {
+    0% { @include moveInAnimation(10rem, 0, 0) }
+    60% { @include moveInAnimation(-1rem, 0, .5) }
+    100% { @include moveInAnimation(0rem, 0, 1) }    
+}
+
+@keyframes faded {
+    0% { @include fadedAnimation(1, 1) }    
+    100% { @include fadedAnimation(2, 0) }        
+}
+
+@-webkit-keyframes faded {
+    0% { @include fadedAnimation(1, 1) }    
+    100% { @include fadedAnimation(2, 0) }        
+}
+
+@-moz-keyframes faded {
+    0% { @include fadedAnimation(1, 1) }    
+    100% { @include fadedAnimation(2, 0) }        
+}

@@ -1,0 +1,18 @@
+@mixin style-header-text($in--font-size, $in--letter-spacing) {    
+    letter-spacing: $in--letter-spacing;
+    font-size: $in--font-size;    
+    color: $color-white;
+    text-align: center;
+    text-transform: uppercase;
+    display: block;        
+}
+
+@mixin moveInAnimation($xPos, $yPos, $status) {
+    transform: translate($xPos, $yPos);
+    opacity: $status;
+}
+
+@mixin fadedAnimation($times, $status) {
+    transform: scale($times);
+    opacity: $status;
+}
