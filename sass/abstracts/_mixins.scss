@@ -16,3 +16,11 @@
     transform: scale($times);
     opacity: $status;
 }
+
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
