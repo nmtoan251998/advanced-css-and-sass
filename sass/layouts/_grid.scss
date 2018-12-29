@@ -1,59 +1,22 @@
 .row {
     max-width: $grid-width;
-    font-size: 16px;        
-    color: #ffffff;
     margin: 0 auto;
-    @include clearfix;
+    @include clearfix;  
+  }
 
-    [class^=col-] { 
-        background-color: #000000; 
-        height: $gutter-vertical;    
-        text-align: center;
-        line-height: $gutter-vertical;
-        float: left }
+[class^="col-"] {     
+    float: left;      
+    margin: 5px 0;  
 
-    &:not(:last-child) { margin-bottom: $gutter-vertical; }        
-
-    .col-1 {     
-        width: calc( (100% - 1 *  #{$gutter-horizontal}) / 2);        
-        background-color: orangered;
-        &:not(:last-child){ margin-right: $gutter-horizontal }
-    }
-
-    .col-2 {     
-        width: calc( (100% - 2 * #{$gutter-horizontal}) / 3);        
-        background-color: lightcoral;
-        &:not(:last-child){ margin-right: $gutter-horizontal }
-    }
-
-    .col-3 {     
-        width: calc( (100% - 1 * #{$gutter-horizontal}) / 2);        
-        background-color: lightblue;
-        &:not(:last-child){ margin-right: $gutter-horizontal }
-    }
-
-    .col-4 {     
-        width: calc( (100% - 3 * #{$gutter-horizontal}) / 4);        
-        background-color: lightgreen;
-        &:not(:last-child){ margin-right: $gutter-horizontal }
-    }
-
-    .col-5 {     
-        width: calc( (100% - 2 * #{$gutter-horizontal}) / 3);        
-        background-color: lightseagreen;
-        &:not(:last-child){ margin-right: $gutter-horizontal }
-    }
-
-    .col-6 {     
-        width: calc( (100% - 2 * #{$gutter-horizontal}) / 3);
-        background-color: lightsteelblue;
-        &:not(:last-child){ margin-right: $gutter-horizontal }
-        &:last-child { width: calc( (2*(100% - 2 * #{$gutter-horizontal}) / 3) + #{$gutter-horizontal}) }
-    }
+    &:not(:last-child) { margin-right: $gutter-horizontal }
 }
 
-
-
-
-
-
+.col-1-of-2 { width: calc((100% - 1 * #{$gutter-horizontal}) / 2) }
+.col-1-of-3 { width: calc((100% - 2 * #{$gutter-horizontal}) / 3) }
+.col-2-of-3 { width: calc((2 * (100% - 2 * #{$gutter-horizontal}) / 3) + #{$gutter-horizontal}) }
+.col-1-of-4 { width: calc((100% - 3 * #{$gutter-horizontal}) / 4) }
+.col-2-of-4 { width: calc((2 * (100% - 3 * #{$gutter-horizontal}) / 4) + #{$gutter-horizontal}) }
+.col-3-of-4 { width: calc(((2 * (100% - 3 * #{$gutter-horizontal}) / 4) + 2 * #{$gutter-horizontal}) + (100% - 3 * #{$gutter-horizontal}) / 4)  }
+  
+  
+  

@@ -16,11 +16,8 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  padding: 3rem;
-  color: #eee;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  padding: 3rem; }
 
 @keyframes moveInBottom {
   0% {
@@ -145,6 +142,11 @@ body {
     transform: scale(2);
     opacity: 0; } }
 
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  color: #eee; }
+
 .header__text-box .header-primary {
   margin-bottom: 3.5rem; }
   .header__text-box .header-primary--main {
@@ -165,6 +167,33 @@ body {
     display: block;
     word-spacing: 2rem;
     animation: moveInRight 1.5s; }
+
+.u-center-text {
+  text-align: center; }
+
+.u-mt-s {
+  margin-top: 2rem; }
+
+.u-mt-m {
+  margin-top: 5rem; }
+
+.u-mt-l {
+  margin-top: 10rem; }
+
+.u-mt-xl {
+  margin-top: 12.5rem; }
+
+.u-mb-s {
+  margin-bottom: 2rem; }
+
+.u-mb-m {
+  margin-bottom: 5rem; }
+
+.u-mb-l {
+  margin-bottom: 10rem; }
+
+.u-mb-xl {
+  margin-bottom: 12.5rem; }
 
 .btn {
   position: relative;
@@ -201,6 +230,38 @@ body {
     color: #000;
     background-color: #eee; }
 
+.row {
+  max-width: 114rem;
+  margin: 0 auto; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+
+[class^="col-"] {
+  float: left;
+  margin: 5px 0; }
+  [class^="col-"]:not(:last-child) {
+    margin-right: 3rem; }
+
+.col-1-of-2 {
+  width: calc((100% - 1 * 3rem) / 2); }
+
+.col-1-of-3 {
+  width: calc((100% - 2 * 3rem) / 3); }
+
+.col-2-of-3 {
+  width: calc((2 * (100% - 2 * 3rem) / 3) + 3rem); }
+
+.col-1-of-4 {
+  width: calc((100% - 3 * 3rem) / 4); }
+
+.col-2-of-4 {
+  width: calc((2 * (100% - 3 * 3rem) / 4) + 3rem); }
+
+.col-3-of-4 {
+  width: calc(((2 * (100% - 3 * 3rem) / 4) + 2 * 3rem) + (100% - 3 * 3rem) / 4); }
+
 .header {
   height: 95vh;
   background-image: linear-gradient(to bottom right, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg);
@@ -220,52 +281,31 @@ body {
     left: 50%;
     transform: translate(-50%, -65%); }
 
-.row {
-  max-width: 114rem;
-  font-size: 16px;
-  color: #ffffff;
-  margin: 0 auto; }
-  .row::after {
-    content: "";
-    display: table;
-    clear: both; }
-  .row [class^=col-] {
-    background-color: #000000;
-    height: 4rem;
-    text-align: center;
-    line-height: 4rem;
-    float: left; }
-  .row:not(:last-child) {
-    margin-bottom: 4rem; }
-  .row .col-1 {
-    width: calc( (100% - 1 *  3rem) / 2);
-    background-color: orangered; }
-    .row .col-1:not(:last-child) {
-      margin-right: 3rem; }
-  .row .col-2 {
-    width: calc( (100% - 2 * 3rem) / 3);
-    background-color: lightcoral; }
-    .row .col-2:not(:last-child) {
-      margin-right: 3rem; }
-  .row .col-3 {
-    width: calc( (100% - 1 * 3rem) / 2);
-    background-color: lightblue; }
-    .row .col-3:not(:last-child) {
-      margin-right: 3rem; }
-  .row .col-4 {
-    width: calc( (100% - 3 * 3rem) / 4);
-    background-color: lightgreen; }
-    .row .col-4:not(:last-child) {
-      margin-right: 3rem; }
-  .row .col-5 {
-    width: calc( (100% - 2 * 3rem) / 3);
-    background-color: lightseagreen; }
-    .row .col-5:not(:last-child) {
-      margin-right: 3rem; }
-  .row .col-6 {
-    width: calc( (100% - 2 * 3rem) / 3);
-    background-color: lightsteelblue; }
-    .row .col-6:not(:last-child) {
-      margin-right: 3rem; }
-    .row .col-6:last-child {
-      width: calc( (2*(100% - 2 * 3rem) / 3) + 3rem); }
+.main {
+  background-color: #f7f7f7;
+  margin-top: -25vh;
+  padding-top: 25vh; }
+  .main .section-about {
+    font-size: 1.5rem; }
+    .main .section-about::after {
+      content: "";
+      display: table;
+      clear: both; }
+    .main .section-about .header-secondary {
+      display: inline-block;
+      font-weight: 900;
+      font-size: 3.5rem;
+      text-transform: uppercase;
+      color: transparent;
+      background-image: linear-gradient(to right, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8));
+      -webkit-background-clip: text; }
+      .main .section-about .header-secondary:hover {
+        cursor: default;
+        text-shadow: 0 10px 20px rgba(119, 119, 119, 0.45);
+        transform: translateY(-5px) skew(-5deg, 5deg) scale(1.1);
+        transition: .2s; }
+    .main .section-about__paragraph {
+      color: #777;
+      line-height: 1.8; }
+      .main .section-about__paragraph .header-tertiary {
+        text-transform: uppercase; }
