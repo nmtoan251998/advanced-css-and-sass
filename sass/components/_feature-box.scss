@@ -1,0 +1,21 @@
+.feature-box {      
+    text-align: center;
+    color: $color-grey-dark;
+    font-size: $font-size-m;
+    background-color: $color-grey-light;    
+    border-radius: 5px;                
+    padding: 3.5rem 1.4rem 1rem;
+
+    & > * { margin-bottom: 2.5rem }
+
+    h3 { text-transform: uppercase }
+}
+
+.icon {
+    font-size: $font-size-xxxl;
+    background: linear-gradient(to right,
+    rgba($color-primary-light, .9),
+    rgba($color-primary-dark, .9));
+    -webkit-background-clip: text;
+    color: transparent;
+}

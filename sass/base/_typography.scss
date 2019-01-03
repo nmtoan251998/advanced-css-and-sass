@@ -4,20 +4,45 @@ body {
     color: $color-white;        
 }
 
-.header__text-box {    
-    .header-primary { 
-        margin-bottom: 3.5rem; 
-    
-        &--main { 
-            @include style-header-text(6rem, 3rem);                         
-            animation: moveInLeft 1.5s;            
-            line-height: 2;
-        }
-    
-        &--sub {
-            @include style-header-text(2rem, 1rem); 
-            word-spacing: 2rem;             
-            animation: moveInRight 1.5s;            
-        }
+.header-primary { 
+    margin-bottom: 3.5rem; 
+
+    &--main { 
+        @include style-header-text(6rem, 3rem);                         
+        animation: moveInLeft 1.5s;            
+        line-height: 2;
+    }
+
+    &--sub {
+        @include style-header-text(2rem, 1rem); 
+        word-spacing: 2rem;             
+        animation: moveInRight 1.5s;            
+    }
+}            
+
+.header-secondary {
+    display: inline-block;
+    font-weight: 900;
+    font-size: $font-size-xxl;
+    text-transform: uppercase;
+    color: transparent;                        
+    background-image: linear-gradient(to right, rgba($color-primary, .8), rgba($color-primary-dark, .8));
+    -webkit-background-clip: text;
+    transition: .2s;  
+
+    &:hover {
+        cursor: default;
+        text-shadow: 0 10px 20px rgba($color-grey-dark, .45);                                                             
+        transform: translateY(-1rem) skew(-5deg, 5deg) scale(1.1);                 
     }            
 }
+
+.header-tertiary {
+    font-size: $font-size-l;
+    font-weight: 700;
+}
+
+.paragraph {
+    font-size: $font-size-m;
+    line-height: 1.8;    
+}        

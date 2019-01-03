@@ -10,7 +10,7 @@
     left: 50%;
     transform: translate(-50%, 0);
     display: inline-block;                        
-    font-size: 1.5rem;
+    font-size: $font-size-m;
     word-spacing: .5rem;       
     transition: .35s;    
 
@@ -34,6 +34,32 @@
     &:active { transform: translate(-50%, .7rem) }
     
     &--animated { animation: moveInBottom 1.5s ease-in}        
-    &--white {color: $color-grey-dark; background-color: $color-white}
-    &--dark {color: $color-dark; background-color: $color-white}
+    &--white {
+        color: $color-grey-dark; 
+        background-color: $color-white 
+    }
+    &--dark {
+        color: $color-dark; 
+        background-color: $color-white
+    }
+}
+
+
+.btn-text {
+    &:link,
+    &:visited {
+        @extend %btn-text;
+        display: inline-block;        
+        color: $color-primary-dark;        
+        border-bottom: 2px solid $color-primary-dark;        
+        transition: .2s;
+    }    
+
+    &:hover {                
+        transform: translateY(-1rem);
+        background-color: $color-primary-light;        
+        color: $color-white;
+        border-bottom: 2px solid $color-primary-light;        
+        box-shadow: 0rem .5rem 1rem rgba($color-dark, .2);
+    }    
 }
