@@ -330,6 +330,8 @@ body {
       outline: 1.2rem solid rgba(40, 180, 133, 0.8);
       z-index: 2;
       transform: scale(1.1) translateY(-1rem); }
+    .composition .composition__img:hover > *:not(:hover) {
+      transform: scale(0.5); }
     .composition .composition__img-1 {
       top: -1rem;
       left: 10%; }
@@ -363,7 +365,7 @@ body {
   position: relative;
   font-size: 1.6rem;
   transition: transform 1s;
-  height: 45rem;
+  height: 55rem;
   border-radius: 5px;
   perspective: 100rem;
   -webkit-perspective: 100rem; }
@@ -383,7 +385,7 @@ body {
       transform: rotateY(180deg); }
       .tour-card__side--back-1 {
         background-image: linear-gradient(to right, rgba(255, 182, 120, 0.85), rgba(238, 133, 42, 0.85)); }
-      .tour-card__side--back-3 {
+      .tour-card__side--back-2 {
         background-image: linear-gradient(to right, rgba(85, 197, 122, 0.85), rgba(40, 180, 133, 0.85)); }
       .tour-card__side--back-3 {
         background-image: linear-gradient(to right, rgba(127, 211, 245, 0.85), rgba(39, 175, 230, 0.85)); }
@@ -401,16 +403,25 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
   .card__img-1 {
     background-image: linear-gradient(to right bottom, rgba(255, 182, 120, 0.45), rgba(238, 133, 42, 0.8)), url("/img/nat-5.jpg"); }
+  .card__img-2 {
+    background-image: linear-gradient(to right bottom, rgba(85, 197, 122, 0.45), rgba(40, 180, 133, 0.8)), url("/img/nat-6.jpg"); }
+  .card__img-3 {
+    background-image: linear-gradient(to right bottom, rgba(127, 211, 245, 0.45), rgba(39, 175, 230, 0.8)), url("/img/nat-7.jpg"); }
 
 .card__header-tour {
   position: absolute;
-  right: 5px;
+  right: 0;
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone;
-  padding: 1rem 1.8rem;
-  background-image: linear-gradient(to right, rgba(255, 182, 120, 0.95), rgba(238, 133, 42, 0.95)); }
+  padding: 1rem 1.8rem; }
+  .card__header-tour-1 {
+    background-image: linear-gradient(to right, rgba(255, 182, 120, 0.75), rgba(238, 133, 42, 0.75)); }
+  .card__header-tour-2 {
+    background-image: linear-gradient(to right, rgba(85, 197, 122, 0.75), rgba(40, 180, 133, 0.75)); }
+  .card__header-tour-3 {
+    background-image: linear-gradient(to right, rgba(127, 211, 245, 0.75), rgba(39, 175, 230, 0.75)); }
   .card__header-tour:first-child {
-    bottom: 30%; }
+    bottom: 25%; }
   .card__header-tour:last-child {
     bottom: 10%; }
 
@@ -420,7 +431,7 @@ body {
   padding: 2rem 0 1rem;
   text-align: center; }
   .card__list li {
-    padding: 1.05rem 0; }
+    padding: 1.5rem 0; }
     .card__list li:not(:last-child) {
       border-bottom: 1px solid rgba(0, 0, 0, 0.25); }
 

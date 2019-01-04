@@ -2,7 +2,7 @@
     position: relative;  
     font-size: $font-size-m;
     transition: transform 1s;
-    height: 45rem;    
+    height: 55rem;    
     border-radius: 5px;  
     perspective: 100rem;      
     -webkit-perspective: 100rem;
@@ -31,7 +31,7 @@
                 rgba($color-secondary-dark, .85));
             }
 
-            &-3{
+            &-2{
                 background-image: linear-gradient(to right,
                 rgba($color-primary-light, .85),
                 rgba($color-primary-dark, .85));
@@ -65,20 +65,48 @@
         rgba($color-secondary-dark, .8)), 
         url('/img/nat-5.jpg');
     }
+    &-2 {
+        background-image: linear-gradient(to right bottom,
+        rgba($color-primary-light, .45),
+        rgba($color-primary-dark, .8)), 
+        url('/img/nat-6.jpg');
+    }
+    &-3 {
+        background-image: linear-gradient(to right bottom,
+        rgba($color-tertiary-light, .45),
+        rgba($color-tertiary-dark, .8)), 
+        url('/img/nat-7.jpg');
+    }
 }
 
 .card__header-tour {
-    position: absolute;  
-    right: 5px;  
+    position: absolute;      
+    right: 0;
     box-decoration-break: clone;
     -webkit-box-decoration-break: clone;
     padding: 1rem 1.8rem;
-    background-image: linear-gradient(to right,
-    rgba($color-secondary-light, .95),
-    rgba($color-secondary-dark, .95));
 
-    &:first-child { bottom: 30%; }
+    &-1 {
+        background-image: linear-gradient(to right,
+        rgba($color-secondary-light, .75),
+        rgba($color-secondary-dark, .75));
+    }
+    &-2 {
+        background-image: linear-gradient(to right,
+        rgba($color-primary-light, .75),
+        rgba($color-primary-dark, .75));
+    }
+    &-3 {
+        background-image: linear-gradient(to right,
+        rgba($color-tertiary-light, .75),
+        rgba($color-tertiary-dark, .75));
+    }
+    
+
+    &:first-child { bottom: 25%; }
     &:last-child { bottom: 10%; }
+
+
 }
 
 .card__list {
@@ -88,7 +116,7 @@
     text-align: center;
 
     li {
-        padding: 1.05rem 0;
+        padding: 1.5rem 0;
         &:not(:last-child) { border-bottom: 1px solid rgba($color-dark, .25) }
     }
 }
