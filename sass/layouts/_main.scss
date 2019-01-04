@@ -1,17 +1,15 @@
-.main {
-    background-color: $color-grey-light;    
-    margin-top: -25vh;    
-    padding-top: 20rem;
-}
-
 .section-about {
+    margin-top: -25vh;    
+    padding: 20rem 0;
+    background-color: $color-grey-light;    
     font-size: $font-size-m;
     color: $color-grey-dark;
     @include clearfix;                                    
 }
 
-.section-features {    
-    height: 95vh;
+.section-features {        
+    transform: skewY(-$skewY);
+    margin-top: -10rem;
     padding: 18rem 0;
     background-image: linear-gradient(to right bottom,
     rgba($color-primary-light, .8),
@@ -19,4 +17,14 @@
     url('/img/nat-1-large.jpg');
     background-position: top;
     background-size: cover;       
+
+    & > * { transform: skewY($skewY); }
+}
+
+.section-tours {
+    background-color: $color-grey-light;    
+    margin-top: -10rem;    
+    padding: 25rem 0 20rem;
+    font-size: $font-size-xl;
+    color: black;
 }

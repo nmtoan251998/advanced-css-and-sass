@@ -40,6 +40,14 @@ body {
 .header-tertiary {
     font-size: $font-size-l;
     font-weight: 700;
+    text-transform: uppercase;
+}
+
+.header-university {
+    font-size: $font-size-xl;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $color-grey-light;
 }
 
 .paragraph {

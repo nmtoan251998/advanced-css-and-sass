@@ -2,8 +2,17 @@
 $color-primary: #7ed56f;
 $color-primary-light: #55c57a;
 $color-primary-dark: #28b485;
+
+$color-secondary-light: #ffb678;
+$color-secondary-dark: #ee852a;
+
+$color-tertiary-light: #7fd3f5;
+$color-tertiary-dark: #27afe6;
+
 $color-grey-dark: #777;
+
 $color-grey-light: #f7f7f7;
+
 $color-white: #eee;
 $color-dark: #000;
 
@@ -16,8 +25,17 @@ $font-size-xxl: 3.6rem;
 $font-size-xxxl: 4.6rem;
 $font-size-xxxxl: 5.6rem;
 
-
 // GRID
 $grid-width: 114rem;
 $gutter-vertical: 4rem;
 $gutter-horizontal: 3rem;
+
+// Section feature skew
+$skewY: 7deg;
+
+
+// Box shadow
+$color-text-shadow: 0 5px 10px rgba($color-dark, .15);
+$color-box-shadow-light: 0 0 10px rgba($color-dark, .15);
+$color-box-shadow-medium: 0 0 10px rgba($color-dark, .25);
+$color-box-shadow-dark: 0 0 10px rgba($color-dark, .5);
