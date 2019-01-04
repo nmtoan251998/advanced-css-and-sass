@@ -12,7 +12,7 @@
     display: inline-block;                        
     font-size: $font-size-m;
     word-spacing: .5rem;       
-    transition: .35s;    
+    transition: .25s;    
 
     &::after {
         @extend %btn;
@@ -28,7 +28,7 @@
     }
 
     &:hover { 
-        transform: translate(-50%, -1.5rem);
+        transform: translate(-50%, -.5rem);
         &::after { animation: faded 1s }
     }
     &:active { transform: translate(-50%, .7rem) }
