@@ -25,22 +25,24 @@
         &--back {            
             transform: rotateY(180deg);
 
-            &-contact {
+            &__contact {
                 position: absolute;
                 left: 50%;
                 top: 50%;
-                transform: translate(-50%, -50%);
-                font-size: $font-size-xxxxl;
-                 
+                transform: translate(-50%, -50%);                                 
                 
-                &--content {                    
+                .contact__price-box {                    
                     color: $color-grey-light;
 
-                    .paragraph {
+                    &__paragraph {
+                        font-size: $font-size-l;
                         text-transform: uppercase;
                         font-weight: 500;
                     }
-                    .pricing { font-weight: 100; }                    
+                    &__pricing { 
+                        font-size: $font-size-xxxxl;
+                        font-weight: 100; 
+                    }                    
                 }
             }
 
@@ -81,20 +83,20 @@
 
     &-1 {
         background-image: linear-gradient(to right bottom,
-        rgba($color-secondary-light, .45),
-        rgba($color-secondary-dark, .8)), 
+        $color-secondary-light,
+        $color-secondary-dark), 
         url('/img/nat-5.jpg');
     }
     &-2 {
         background-image: linear-gradient(to right bottom,
-        rgba($color-primary-light, .45),
-        rgba($color-primary-dark, .8)), 
+        $color-primary-light,
+        $color-primary-dark), 
         url('/img/nat-6.jpg');
     }
     &-3 {
         background-image: linear-gradient(to right bottom,
-        rgba($color-tertiary-light, .45),
-        rgba($color-tertiary-dark, .8)), 
+        $color-tertiary-light,
+        $color-tertiary-dark), 
         url('/img/nat-7.jpg');
     }
 }
@@ -105,6 +107,7 @@
     box-decoration-break: clone;
     -webkit-box-decoration-break: clone;
     padding: 1rem 1.8rem;
+    text-align: right;
 
     &-1 {
         background-image: linear-gradient(to right,

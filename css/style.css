@@ -386,18 +386,19 @@ body {
       color: #777; }
     .tour-card__side--back {
       transform: rotateY(180deg); }
-      .tour-card__side--back-contact {
+      .tour-card__side--back__contact {
         position: absolute;
         left: 50%;
         top: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 5.6rem; }
-        .tour-card__side--back-contact--content {
+        transform: translate(-50%, -50%); }
+        .tour-card__side--back__contact .contact__price-box {
           color: #f7f7f7; }
-          .tour-card__side--back-contact--content .paragraph {
+          .tour-card__side--back__contact .contact__price-box__paragraph {
+            font-size: 2rem;
             text-transform: uppercase;
             font-weight: 500; }
-          .tour-card__side--back-contact--content .pricing {
+          .tour-card__side--back__contact .contact__price-box__pricing {
+            font-size: 5.6rem;
             font-weight: 100; }
       .tour-card__side--back-1 {
         background-image: linear-gradient(to right, rgba(252, 179, 115, 0.85), rgba(238, 124, 25, 0.85)); }
@@ -419,18 +420,19 @@ body {
   background-blend-mode: screen;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
   .card__img-1 {
-    background-image: linear-gradient(to right bottom, rgba(252, 179, 115, 0.45), rgba(238, 124, 25, 0.8)), url("/img/nat-5.jpg"); }
+    background-image: linear-gradient(to right bottom, #fcb373, #ee7c19), url("/img/nat-5.jpg"); }
   .card__img-2 {
-    background-image: linear-gradient(to right bottom, rgba(85, 197, 122, 0.45), rgba(40, 180, 133, 0.8)), url("/img/nat-6.jpg"); }
+    background-image: linear-gradient(to right bottom, #55c57a, #28b485), url("/img/nat-6.jpg"); }
   .card__img-3 {
-    background-image: linear-gradient(to right bottom, rgba(127, 211, 245, 0.45), rgba(39, 175, 230, 0.8)), url("/img/nat-7.jpg"); }
+    background-image: linear-gradient(to right bottom, #7fd3f5, #27afe6), url("/img/nat-7.jpg"); }
 
 .card__header-tour {
   position: absolute;
   right: 0;
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone;
-  padding: 1rem 1.8rem; }
+  padding: 1rem 1.8rem;
+  text-align: right; }
   .card__header-tour-1 {
     background-image: linear-gradient(to right, rgba(252, 179, 115, 0.75), rgba(238, 124, 25, 0.75)); }
   .card__header-tour-2 {
