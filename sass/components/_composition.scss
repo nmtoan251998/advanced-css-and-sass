@@ -12,16 +12,14 @@
         &:hover {      
             outline: 1.2rem solid rgba($color-primary-dark,.8);
             z-index: 2;            
-            transform: scale(1.1) translateY(-1rem);                        
+            transform: scale(1.1) translateY(-1rem);                                    
         }
-        &:hover &:not(:hover){
-            transform: scale(.5);
-        }        
+                
 
         &-1 { top: -1rem; left: 10%; }
         &-2 { top: 2rem; right: 0; }
         &-3 { top: 10rem; left: 30%; }    
     }
 
-    
+    &:hover &__img:not(:hover) { transform: scale(.95) }    
 }
