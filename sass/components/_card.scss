@@ -25,6 +25,25 @@
         &--back {            
             transform: rotateY(180deg);
 
+            &-contact {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                font-size: $font-size-xxxxl;
+                 
+                
+                &--content {                    
+                    color: $color-grey-light;
+
+                    .paragraph {
+                        text-transform: uppercase;
+                        font-weight: 500;
+                    }
+                    .pricing { font-weight: 100; }                    
+                }
+            }
+
             &-1{
                 background-image: linear-gradient(to right,
                 rgba($color-secondary-light, .85),

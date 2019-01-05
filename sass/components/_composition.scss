@@ -14,7 +14,7 @@
             z-index: 2;            
             transform: scale(1.1) translateY(-1rem);                        
         }
-        &:hover > *:not(:hover){
+        &:hover &:not(:hover){
             transform: scale(.5);
         }        
 

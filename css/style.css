@@ -333,7 +333,7 @@ body {
       outline: 1.2rem solid rgba(40, 180, 133, 0.8);
       z-index: 2;
       transform: scale(1.1) translateY(-1rem); }
-    .composition .composition__img:hover > *:not(:hover) {
+    .composition .composition__img:hover .composition .composition__img:not(:hover) {
       transform: scale(0.5); }
     .composition .composition__img-1 {
       top: -1rem;
@@ -386,8 +386,21 @@ body {
       color: #777; }
     .tour-card__side--back {
       transform: rotateY(180deg); }
+      .tour-card__side--back-contact {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 5.6rem; }
+        .tour-card__side--back-contact--content {
+          color: #f7f7f7; }
+          .tour-card__side--back-contact--content .paragraph {
+            text-transform: uppercase;
+            font-weight: 500; }
+          .tour-card__side--back-contact--content .pricing {
+            font-weight: 100; }
       .tour-card__side--back-1 {
-        background-image: linear-gradient(to right, rgba(255, 182, 120, 0.85), rgba(238, 133, 42, 0.85)); }
+        background-image: linear-gradient(to right, rgba(252, 179, 115, 0.85), rgba(238, 124, 25, 0.85)); }
       .tour-card__side--back-2 {
         background-image: linear-gradient(to right, rgba(85, 197, 122, 0.85), rgba(40, 180, 133, 0.85)); }
       .tour-card__side--back-3 {
@@ -406,7 +419,7 @@ body {
   background-blend-mode: screen;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
   .card__img-1 {
-    background-image: linear-gradient(to right bottom, rgba(255, 182, 120, 0.45), rgba(238, 133, 42, 0.8)), url("/img/nat-5.jpg"); }
+    background-image: linear-gradient(to right bottom, rgba(252, 179, 115, 0.45), rgba(238, 124, 25, 0.8)), url("/img/nat-5.jpg"); }
   .card__img-2 {
     background-image: linear-gradient(to right bottom, rgba(85, 197, 122, 0.45), rgba(40, 180, 133, 0.8)), url("/img/nat-6.jpg"); }
   .card__img-3 {
@@ -419,7 +432,7 @@ body {
   -webkit-box-decoration-break: clone;
   padding: 1rem 1.8rem; }
   .card__header-tour-1 {
-    background-image: linear-gradient(to right, rgba(255, 182, 120, 0.75), rgba(238, 133, 42, 0.75)); }
+    background-image: linear-gradient(to right, rgba(252, 179, 115, 0.75), rgba(238, 124, 25, 0.75)); }
   .card__header-tour-2 {
     background-image: linear-gradient(to right, rgba(85, 197, 122, 0.75), rgba(40, 180, 133, 0.75)); }
   .card__header-tour-3 {
@@ -515,6 +528,6 @@ body {
 .section-tours {
   background-color: #f7f7f7;
   margin-top: -10rem;
-  padding: 25rem 0 20rem;
+  padding: 25rem 0 15rem;
   font-size: 2.6rem;
   color: black; }
