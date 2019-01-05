@@ -42,7 +42,11 @@
                     &__pricing { 
                         font-size: $font-size-xxxxl;
                         font-weight: 100; 
-                    }                    
+                    }    
+                    
+                    &-1 > *::selection{ background-color: rgba(236, 150, 150, .95) }
+                    &-2 > *::selection{ background-color: rgba(150, 236, 169, 0.95) }
+                    &-3 > *::selection{ background-color: rgba(133, 183, 248, 0.95) }
                 }
             }
 

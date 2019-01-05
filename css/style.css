@@ -400,6 +400,12 @@ body {
           .tour-card__side--back__contact .contact__price-box__pricing {
             font-size: 5.6rem;
             font-weight: 100; }
+          .tour-card__side--back__contact .contact__price-box-1 > *::selection {
+            background-color: rgba(236, 150, 150, 0.95); }
+          .tour-card__side--back__contact .contact__price-box-2 > *::selection {
+            background-color: rgba(150, 236, 169, 0.95); }
+          .tour-card__side--back__contact .contact__price-box-3 > *::selection {
+            background-color: rgba(133, 183, 248, 0.95); }
       .tour-card__side--back-1 {
         background-image: linear-gradient(to right, rgba(252, 179, 115, 0.85), rgba(238, 124, 25, 0.85)); }
       .tour-card__side--back-2 {
