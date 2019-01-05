@@ -303,6 +303,9 @@ body {
   .btn--dark {
     color: #000;
     background-color: #eee; }
+  .btn--green {
+    color: #f7f7f7;
+    background-color: #55c57a; }
 
 .btn-text:link, .btn-text:visited {
   display: inline-block;
@@ -400,6 +403,7 @@ body {
   height: 45%;
   background-position: top;
   background-size: cover;
+  background-blend-mode: screen;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
   .card__img-1 {
     background-image: linear-gradient(to right bottom, rgba(255, 182, 120, 0.45), rgba(238, 133, 42, 0.8)), url("/img/nat-5.jpg"); }
@@ -473,6 +477,7 @@ body {
   background-size: cover;
   background-position: top;
   position: relative;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%); }
   .header__logo-box {
     position: absolute;

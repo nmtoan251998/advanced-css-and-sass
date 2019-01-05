@@ -42,6 +42,10 @@
         color: $color-dark; 
         background-color: $color-white
     }
+    &--green {
+        color: $color-grey-light;
+        background-color: $color-primary-light;
+    }
 }
 
 
