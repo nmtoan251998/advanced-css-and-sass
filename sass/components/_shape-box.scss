@@ -1,0 +1,62 @@
+.story {
+    font-size: $font-size-m;
+    font-weight: 500;
+    color: $color-grey-dark;
+    background-color: rgba($color-grey-light-1, .6);
+    height: 25rem;
+    width: 80%;
+    padding: 5rem 8.5rem;
+    margin: 0 auto;
+    transform: skewX(-$skew__feature-box);    
+    box-shadow: $color-box-shadow-medium;
+    border-radius: 3px;
+    word-spacing: 3px;    
+
+    &__shape {
+        float: left;        
+        height: 15rem;
+        width: 15rem;
+        shape-outside: circle(50%);
+        clip-path: circle(50%);
+        -webkit-clip-path: circle(50%);        
+        transform: translateX(-4rem) skewX($skew__feature-box);        
+        position: relative;
+    }
+
+    &__img {
+        height: 100%;
+        transition: all .35s;
+        z-index: 1;      
+        backface-visibility: hidden;
+        box-shadow: $color-box-shadow-slight;
+    }    
+
+    &__img-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        color: $color-white;
+        font-size: $font-size-l;
+        text-align: center;
+        text-transform: uppercase;
+        line-height: 1.5; 
+        opacity: 0;
+        transition: all .35s;    
+        z-index: 2;                   
+    }
+
+    &__text {
+        transform: skewX($skew__feature-box);
+        line-height: 1.8;
+    }
+
+    &:hover &__img-content{
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+
+    &:hover &__img{
+        filter: blur(3px) brightness(80%);
+    }
+}

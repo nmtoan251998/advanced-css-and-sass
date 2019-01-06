@@ -8,7 +8,7 @@
 }
 
 .section-features {        
-    transform: skewY(-$skewY);
+    transform: skewY(-$skew__feature-box);
     margin-top: -10rem;
     padding: 18rem 0;
     background-image: linear-gradient(to right bottom,
@@ -18,13 +18,17 @@
     background-position: top;
     background-size: cover;       
 
-    & > * { transform: skewY($skewY); }
+    & > * { transform: skewY($skew__feature-box); }
 }
 
 .section-tours {
-    background-color: $color-grey-light;    
     margin-top: -10rem;    
     padding: 25rem 0 15rem;
-    font-size: $font-size-xl;
-    color: black;
+    background-color: $color-grey-light;        
+    font-size: $font-size-xl;    
+}
+
+.section-stories {
+    padding: 10rem 0;   
+    background-color: $color-grey-dark;        
 }

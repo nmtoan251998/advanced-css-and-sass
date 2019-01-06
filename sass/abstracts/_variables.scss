@@ -12,6 +12,7 @@ $color-tertiary-dark: #27afe6;
 $color-grey-dark: #777;
 
 $color-grey-light: #f7f7f7;
+$color-grey-light-1: #ffffff;
 
 $color-white: #eee;
 $color-dark: #000;
@@ -31,11 +32,12 @@ $gutter-vertical: 4rem;
 $gutter-horizontal: 3rem;
 
 // Section feature skew
-$skewY: 7deg;
+$skew__feature-box: 7deg;
+$skew__shape-box: 12deg;
 
 
 // Box shadow
 $color-text-shadow: 0 5px 10px rgba($color-dark, .15);
-$color-box-shadow-light: 0 0 10px rgba($color-dark, .15);
+$color-box-shadow-slight: 0 0 10px rgba($color-dark, .15);
 $color-box-shadow-medium: 0 0 10px rgba($color-dark, .25);
 $color-box-shadow-dark: 0 0 10px rgba($color-dark, .5);
