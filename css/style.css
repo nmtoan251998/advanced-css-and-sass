@@ -485,6 +485,7 @@ body {
   .story__img {
     height: 100%;
     transition: all .35s;
+    transform: scale(1.2);
     z-index: 1;
     backface-visibility: hidden;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); }
@@ -508,6 +509,7 @@ body {
     opacity: 1;
     transform: translate(-50%, -50%); }
   .story:hover .story__img {
+    transform: translateX(-1rem) scale(1);
     filter: blur(3px) brightness(80%); }
 
 .bg-video {
