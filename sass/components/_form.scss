@@ -40,14 +40,16 @@
         padding: 1.8rem 0;
         width: 75%;
         border: none;
-        border-bottom: 3px solid transparent;
+        border-bottom: 3.5px solid transparent;
         outline: none;
-        text-indent: 2rem;                     
+        text-indent: 2rem;  
+        
+        
 
-        &:focus {                        
-            cursor: pointer;            
-            color: $color-dark;             
-        }      
+        &:focus:invalid { border-bottom: 3.5px solid $color-secondary-light; }
+        &:focus:valid { border-bottom: 3.5px solid $color-primary-dark; }                
+        
+        &:focus:placeholder-shown { border-bottom: 3.5px solid $color-secondary-light; }      
         
         &:focus::-webkit-input-placeholder {
             transition: all .5s;
@@ -57,7 +59,7 @@
         &:focus + label {
             color: $color-grey-dark;
             opacity: 1;
-            top: 6rem;            
+            transform: translateY(4.5rem);
         }
 
     }

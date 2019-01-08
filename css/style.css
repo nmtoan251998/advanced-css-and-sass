@@ -554,19 +554,22 @@ body {
     padding: 1.8rem 0;
     width: 75%;
     border: none;
-    border-bottom: 3px solid transparent;
+    border-bottom: 3.5px solid transparent;
     outline: none;
     text-indent: 2rem; }
-    .booking__input:focus {
-      cursor: pointer;
-      color: #000; }
+    .booking__input:focus:invalid {
+      border-bottom: 3.5px solid #fcb373; }
+    .booking__input:focus:valid {
+      border-bottom: 3.5px solid #28b485; }
+    .booking__input:focus:placeholder-shown {
+      border-bottom: 3.5px solid #fcb373; }
     .booking__input:focus::-webkit-input-placeholder {
       transition: all .5s;
       color: transparent !important; }
     .booking__input:focus + label {
       color: #777;
       opacity: 1;
-      top: 6rem; }
+      transform: translateY(4.5rem); }
   .booking__label {
     transition: all .5s;
     position: absolute;
