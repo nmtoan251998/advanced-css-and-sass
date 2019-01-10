@@ -1,5 +1,4 @@
-.booking {            
-    // transform: translateX(-10%);
+.booking {                
     margin: 0 auto;
     width: 95%;
     height: 50rem;
@@ -71,5 +70,52 @@
         top: 2rem;
         color: inherit;
         opacity: 0;
+    }    
+}
+
+.form__radio-group {    
+    position: relative;
+    color: $color-grey-dark;    
+    display: inline-block;
+    width: 49%;
+
+    .form__radio-input {    
+        opacity: 0;
+        
+        &:checked ~ .form__radio-label .form__radio-btn::after{
+            opacity: 1;
+        }
+    }
+
+    .form__radio-label {        
+        display: inline-block;
+        padding-left: 1rem;
+        cursor: pointer;        
+    }
+
+    .form__radio-btn {          
+        position: absolute;  
+        top: -.5rem;
+        left: -1rem;    
+        height: 3rem;
+        width: 3rem;
+        border-radius: 50%;
+        border: 5px solid $color-primary-dark;            
+        display: block; 
+        
+        &::after {            
+            content: "";
+            transition: all .25s;
+            opacity: 0;
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 1.35rem;
+            width: 1.35rem;
+            border-radius: 50%;
+            background-color: $color-primary-dark;            
+        }
     }
 }
