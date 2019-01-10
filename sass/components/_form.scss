@@ -19,6 +19,7 @@
     }
 
     &__forms {
+        position: relative;
         width: 50%;
         color: $color-grey-light;
         font-size: $font-size-m;
@@ -70,7 +71,18 @@
         top: 2rem;
         color: inherit;
         opacity: 0;
-    }    
+    }  
+    
+    &__btn {
+        position: absolute;
+        display: block;  
+        left: 0;   
+        
+        button {
+            cursor: pointer;
+            border: 1px solid transparent;
+        }
+    }
 }
 
 .form__radio-group {    

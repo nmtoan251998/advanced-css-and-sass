@@ -1,4 +1,4 @@
-.btn:link, .btn:visited, .btn::after {
+.btn, .btn:link, .btn:visited, .btn::after {
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
@@ -540,6 +540,7 @@ body {
     font-size: 3.6rem !important;
     font-weight: 500 !important; }
   .booking__forms {
+    position: relative;
     width: 50%;
     color: #f7f7f7;
     font-size: 1.6rem; }
@@ -577,6 +578,13 @@ body {
     top: 2rem;
     color: inherit;
     opacity: 0; }
+  .booking__btn {
+    position: absolute;
+    display: block;
+    left: 0; }
+    .booking__btn button {
+      cursor: pointer;
+      border: 1px solid transparent; }
 
 .form__radio-group {
   position: relative;
