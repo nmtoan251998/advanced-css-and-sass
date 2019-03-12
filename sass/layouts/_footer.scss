@@ -1,0 +1,64 @@
+.footer {    
+    background-color: $color-dark;
+
+    &__logo {        
+        width: 100%;
+        padding-top: 5rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__img {
+        height: 10rem;
+        width: 10rem;
+    }
+
+    &__navigation {
+        color: $color-grey-light;
+        font-size: $font-size-m;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(min-content, 1fr));
+        grid-column-gap: 13.5rem;
+        padding: 5rem 5rem 3rem;        
+
+        &-menu {
+            text-align: center;
+        }
+
+        &-list {                        
+            padding: 1.4rem 2.6rem;
+            display: inline-block;
+        }
+
+        &-item {
+            display: block;
+            text-transform: uppercase;
+            color: $color-white;
+            text-decoration: none;
+            transition: .2s all;
+
+            &:hover {                
+                color: $color-dark;
+                background-color: rgba($color-white, .95);
+                transform: translateY(-4px);
+            }
+        }
+        
+        &--left {            
+            display: inline-block;
+            border-top: 1px solid $color-grey-dark;
+        }
+
+        &--right {            
+            display: inline-block;
+            border-top: 1px solid $color-grey-dark;
+
+            &__text {                
+                padding-top: 1.4rem;
+                padding-left: 1rem;
+            }
+        }
+    }
+
+    
+}
